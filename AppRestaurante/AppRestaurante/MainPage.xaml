@@ -2,24 +2,45 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppRestaurante.MainPage"
-             Title="Pagina Principal">
+             Title="Pagina Inicio Sesion">
+    <ContentPage.Content>
 
-            <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Pagina de Inicio" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
+        <Grid>
 
+            <Image Source="Login.jpg" Aspect="AspectFill" />
+            <BoxView Color="Aqua" Opacity="0.8"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="Logo.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+
+                    <Entry Placeholder="Usuario" PlaceholderColor="White"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True"/>
+                    <Button Text="Iniciar Sesion" BackgroundColor="White" BorderRadius="20" TextColor="Aqua"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Recuperar Contraseña" FontAttributes="Bold"/>
+                        <Label Text="Registrarse" HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" Margin="0,0,0,50">
+                    <Label Text="Iniciar Sesion con" HorizontalOptions="Center"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Grid.Row="0" Source="facebook.png" WidthRequest="45" HeightRequest="45"/>
+                        <Image Grid.Row="0" Source="gmail.png" WidthRequest="45" HeightRequest="45"/>
+                        <Image Grid.Row="0" Source="linkedln.png" WidthRequest="45" HeightRequest="45"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Grid>
+
+    </ContentPage.Content>
 </ContentPage>
