@@ -8,7 +8,6 @@
     <local:Promociones/>
     <local:Contactanos/>
 
-
     <ContentPage>
         <StackLayout>
             <Label Text="Principal"
