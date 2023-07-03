@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AppRestaurante
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Home : ContentPage
+    public partial class PrincipalPage : ContentPage
     {
-        public Home()
+        public PrincipalPage()
         {
             InitializeComponent();
         }

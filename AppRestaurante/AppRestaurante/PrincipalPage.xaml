@@ -2,19 +2,21 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:AppRestaurante"
             x:Class="AppRestaurante.PrincipalPage"
-            Title="Home">
+            Title="Pagina Principal">
 
     <local:Home/>
     <local:Promociones/>
     <local:Contactanos/>
 
     <ContentPage>
+
         <StackLayout>
             <Label Text="Principal"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
+
     </ContentPage>
-    
-    
+
+
 </TabbedPage>
