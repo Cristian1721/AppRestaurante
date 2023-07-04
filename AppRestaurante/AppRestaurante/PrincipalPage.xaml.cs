@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace AppRestaurante
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PrincipalPage : ContentPage
+    public partial class PrincipalPage : TabbedPage
     {
         public PrincipalPage()
         {

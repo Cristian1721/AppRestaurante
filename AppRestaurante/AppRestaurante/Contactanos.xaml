@@ -6,12 +6,52 @@
              Icon="correo-de-contacto.png">
     
     <ContentPage.Content>
-
+        
         <StackLayout>
             <Label Text="Contactanos"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>           
-        
+                HorizontalOptions="CenterAndExpand" />      
+            
+            
+            <Label x:Name="principal" 
+               Text="Gracias por Contactarse con nosotros"
+               FontSize="Medium"/>
+            <Grid>                
+                    <ProgressBar x:Name="progreso"
+                     Progress=".5"/>
+                <Switch x:Name="sw_example"/>
+            </Grid>
+
+            <Frame>
+                <StackLayout>
+
+                    <Entry x:Name="nombre"
+                           Placeholder="Ingres su nombre"
+                           FontSize="Medium"/>
+                    <Entry x:Name="telefono"
+                           Placeholder="Ingres su Telefono"
+                           FontSize="Medium"/>
+                    <Entry x:Name="direccion"
+                           Placeholder="Ingres su direccion"
+                           FontSize="Medium"/>
+                    <Entry x:Name="correo"
+                           Placeholder="Ingres su correo electronico"
+                           FontSize="Medium"/>
+                </StackLayout>                
+            </Frame>
+            
+            <Button x:Name="btn_enviar"
+                    Text="Enviar Informacion"
+                    FontSize="Large"
+                    Clicked="btn_enviar_Clicked"
+                    CornerRadius="10"/>
+        </StackLayout>
     </ContentPage.Content>
+
+    
+
+    
+
+    
+    
 </ContentPage>
